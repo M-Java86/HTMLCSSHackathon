@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.CSS">
-    <title>Document</title> 
+    <title>Cinema Schedule</title> 
 </head>
     <body>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Cinema</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,38 +23,86 @@
                 </div>
             </div>
         </nav> 
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <img src="./images/CinemaFront.jpeg" class="img-fluid" alt="Photo of Cinema from the street.">
+
+        <div class="container schedule-container-image">
+            <div id="cinema-image-row" class="row">
+                <div class="col-10 offset-3 schedule-image-container ">
+                    <h1 style="margin-bottom: 3%;">Welcome to the Cinemas!!!</h1>
+                </div>
+                <div class="col-3 offset-5 schedule-image-container ">
+                    <h3>We are open:</h3>
                 </div>
             </div>
-        </div>         
-        <div class="container">
-            <div class="row">
-                <div class="col-4 offset-3">
+        </div>  
+
+        <div id="schedule-container" class="container">
+
+            <div id="schedule-row-first" class="row">
+                <div class="col-3 offset-4">
                     Monday - Thursday
                 </div>
                 <div class="col-2  ">
                     16:30 - 21:00
                 </div>
             </div>
-            <div class="row">
-                <div class="col-4 offset-3">
+
+            <div id="schedule-row" class="row">
+                <div class="col-3 offset-4">
                     Friday - Saturday
                 </div>
                 <div class="col-2">
                     16:30 - 22:00
                 </div>
             </div>
-            <div class="row">
-                <div class="col-4 offset-3">
+
+            <div id="schedule-row-last" class="row">
+                <div class="col-3 offset-4">
                     Sunday
                 </div>
                 <div class="col-2">
                     16:00 - 21:30
                 </div>
             </div>
-        </div>           
+        </div>   
+
+        <div class="container">
+
+            <div class="row"><h3 style="margin-top: 4%;">What's on:</h3></div>
+
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+
+                        <tr>
+                        <th scope="col" >Movie</th>
+                        <th scope="col" >Showing</th>
+                        <th scope="col" colspan="2"></th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td >Lion King</td>
+                        <td>16:30, 18:30, 20:30</td>
+                        <!-- <td ></td> -->
+                        <td colspan="2"><div class="img-container"><img class="img-showing" src="./images/LionKing.jpg" alt=""></div></td>
+                        </tr>
+                        <tr>
+                        <td >Jumanji</td>
+                        <td>16:30, 18:30, 20:30</td>
+                        <td></td>
+                        <td><div class="img-container"><img class="img-showing-jumanji" src="./images/Jumanji.jpeg" alt=""></div></td>
+                        </tr>
+                        <tr>
+                        <td >Frozen</td>
+                        <td>16:30, 18:30, 20:30</td>
+                        <td></td>
+                        <td><div class="img-container"><img class="img-showing" src="./images/Frozen.jpg" alt=""></div></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>        
     </body>
 </html>
