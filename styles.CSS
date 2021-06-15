@@ -1,0 +1,22 @@
+
+#schedule-row, 
+#schedule-row-first,
+#schedule-row-last
+{
+    border-bottom:black 2px solid;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.img-showing{
+    object-fit: cover;
+    width: 35%;
+    height: 35%;
+}
+.img-showing-jumanji{
+        object-fit: cover;
+    width: 50%;
+    height: 50%;
+}
+
+
